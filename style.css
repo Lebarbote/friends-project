@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'FriendsFont';
+  src: url('fonts/fontfriends.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'FriendsFont', sans-serif;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #663399;
+  padding: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-left: 100px;
+}
+
+.container label,
+.container select {
+  width: 100%;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #FFF8DC;
+  border-radius: 4px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+}
+
+.saved-button {
+  position: fixed;
+  bottom: 50px; 
+  right: 20px;
+  background-color: #FFD700;
+  color: #663399;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.saved-button:hover {
+  background-color: #ffc107;
+}
+
+.clone-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.clone-btn:hover {
+  background-color: #FFC107;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #4B0082; 
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1;
+}
+
+
+#characterImage {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 4px;
+}
+
+#quadro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; 
+  width: auto;   
+  z-index: 0;
+  opacity: 0.30;
+  pointer-events: none; 
+}
+
+.card button {
+  margin: 8px 5px 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card .updateBtn {
+  background-color: #FFD700;
+  color: #663399;
+}
+
+.card .updateBtn:hover {
+  background-color: #e6c200;
+}
+
+.card .deleteBtn {
+  background-color: #DC143C;
+  color: white;
+}
+
+.card .deleteBtn:hover {
+  background-color: #b01030;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  text-align: center;
+  cursor: pointer;
+  background-color: #9370DB;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+

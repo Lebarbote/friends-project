@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saved Characters</title>
+  <link rel="stylesheet" href="friends.css" />
+</head>
+<body>
+  <img id="quadro" src="Assets/quadro.png" />
+
+  <h1>Saved Characters</h1>
+  <div id="cardsContainer" class="cards-grid"></div>
+
+  <button id="backBtn" class="back-button">← Back to selection</button>
+
+  <footer class="footer">
+    Developed by Leticia Barbosa © 2025
+  </footer>
+
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Edit phrase</h3>
+      <input type="text" id="editPhraseInput" placeholder="Enter new phrase" />
+      <div class="modal-buttons">
+        <button id="confirmEdit">OK</button>
+        <button id="cancelEdit">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="errorModal" class="modal hidden">
+    <div class="modal-content">
+      <p id="errorMessage"></p>
+      <button id="closeModal">OK</button>
+    </div>
+  </div>
+
+  <div id="confirmModal" class="modal hidden">
+    <div class="modal-content">
+      <p id="confirmMessage"></p>
+      <div class="modal-buttons">
+        <button id="confirmYes">Yes</button>
+        <button id="confirmNo">Cancel</button>
+      </div>
+    </div>
+  </div>  
+
+  <script src="friends.js"></script>
+</body>
+</html>

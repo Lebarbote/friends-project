@@ -1,0 +1,31 @@
+### Create character
+POST http://localhost:3333/character
+Content-Type: application/json
+
+{
+  "name": "Joey Tribbiani",
+  "profession": "Ator",
+  "phrase": "How you doin'?"
+}
+
+###
+
+### Find character
+GET http://localhost:3333/character?search=joey
+
+###
+
+### Update character 
+PUT http://localhost:3333/character/fd691586-e165-493c-8278-afe3e135bb03
+Content-Type: application/json
+
+{
+  "name": "Joey Tribbiani",
+  "profession": "Comedian",
+  "phrase": "Pizza is my soulmate."
+}
+
+###
+
+### Delete character 
+DELETE http://localhost:3333/character/fd691586-e165-493c-8278-afe3e135bb03

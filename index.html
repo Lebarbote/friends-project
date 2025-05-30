@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Friends</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <img id="quadro" src="Assets/quadro.png" />
+
+  <div class="container">
+    <h1>Create a character: </h1>
+    <div id="gallery" class="gallery-grid"></div>
+  </div>
+
+  <button id="goToSavedBtn" class="saved-button">→ View saved characters</button>
+  <script>
+    document.getElementById('goToSavedBtn').addEventListener('click', () => {
+      window.location.href = 'friends.html';
+    });
+  </script>
+  <footer class="footer">
+    Developed by Leticia Barbosa © 2025
+  </footer>
+
+  <div id="errorModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <p id="errorMessage"></p>
+    </div>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
