@@ -1,0 +1,9 @@
+This project is a simple CRUD where I can create, read, update and delete something.
+
+In this case I can create a character, go to the saved characters screen and then I can update each character's phrase and delete their card.
+
+The frontend used: Javascript + HTML + CSS.
+
+For the backend, I used Fastify, which is a Node.js web framework focused on high performance and ease of use.
+
+Utilizei o banco de dados NEON (https://console.neon.tech). 
