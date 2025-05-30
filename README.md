@@ -6,4 +6,4 @@ The frontend used: Javascript + HTML + CSS.
 
 For the backend, I used Fastify, which is a Node.js web framework focused on high performance and ease of use.
 
-Utilizei o banco de dados NEON (https://console.neon.tech). 
+I used the NEON database (https://console.neon.tech). 
