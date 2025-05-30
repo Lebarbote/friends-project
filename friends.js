@@ -1,6 +1,5 @@
-// ===============================
-// Função principal para carregar os personagens salvos
-// ===============================
+
+// Main function to load saved characters
 async function loadSavedCharacters() {
   const savedIds = JSON.parse(localStorage.getItem('savedCharacters')) || [];
   const container = document.getElementById('cardsContainer');
@@ -33,7 +32,7 @@ async function loadSavedCharacters() {
       `;
       card.querySelector('p:last-of-type').appendChild(phraseSpan);
 
-      // Botão de atualizar frase (abre modal)
+      // Update sentence button (opens modal)
       const updateBtn = document.createElement('button');
       updateBtn.textContent = '🗘 Update';
       updateBtn.className = 'updateBtn';
@@ -41,7 +40,7 @@ async function loadSavedCharacters() {
         openEditModal(character, phraseSpan);
       });
 
-      // Botão de deletar personagem
+      // Delete character button
       const deleteBtn = document.createElement('button');
       deleteBtn.textContent = '❌ Delete';
       deleteBtn.className = 'deleteBtn';
@@ -74,9 +73,8 @@ async function loadSavedCharacters() {
     });
 }
 
-// ===============================
-// Modal de mensagem
-// ===============================
+
+// Message modal
 function showMessageModal(message) {
   const modal = document.getElementById('errorModal');
   const msg = document.getElementById('errorMessage');
@@ -88,9 +86,8 @@ document.getElementById('closeModal').addEventListener('click', () => {
   document.getElementById('errorModal').classList.add('hidden');
 });
 
-// ===============================
-// Modal de edição da frase
-// ===============================
+
+// Sentence editing modal
 let currentCharacter = null;
 let currentPhraseSpan = null;
 
@@ -135,9 +132,8 @@ cancelEditBtn.onclick = () => {
   editModal.classList.add('hidden');
 };
 
-// ===============================
-// Modal de confirmação
-// ===============================
+
+// Confirmation modal
 function showConfirmModal(message, onConfirm) {
   const modal = document.getElementById('confirmModal');
   const msg = document.getElementById('confirmMessage');
@@ -166,14 +162,12 @@ function showConfirmModal(message, onConfirm) {
   noBtn.addEventListener('click', onNo);
 }
 
-// ===============================
-// Botão de voltar
-// ===============================
+
+// Back button
 document.getElementById('backBtn').addEventListener('click', () => {
   window.location.href = 'index.html';
 });
 
-// ===============================
-// Iniciar carregamento
-// ===============================
+
+// Start charging
 loadSavedCharacters();
