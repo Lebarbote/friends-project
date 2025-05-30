@@ -7,3 +7,5 @@ The frontend used: Javascript + HTML + CSS.
 For the backend, I used Fastify, which is a Node.js web framework focused on high performance and ease of use.
 
 I used the NEON database (https://console.neon.tech). 
+
+It is available on github pages at: https://lebarbote.github.io/friends-project/
